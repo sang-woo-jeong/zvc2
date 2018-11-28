@@ -1,0 +1,27 @@
+.sec4 {background: red; position: absolute; top:0; width:100%;}
+.sec4 article {width:80%; margin:0 auto; height:550px; position:relative;}
+.sec4 article .textwrap {width:50%;
+                         position:absolute; right:0; top:50%;
+                         transform:translate(0,-50%);
+                         padding:20px;}
+.sec4 article h3 {font-weight:400; font-size:.9vw; margin-top:3px; margin-bottom:3px;}
+.sec4 article h4 {font-weight:300; font-size:.9vw;}
+.sec4 article figure {width:50%; position:absolute; left:0; top:50%;
+                      transform:translate(0,-50%);}
+.sec4 article figure img {width:100%;}
+@media(max-width:512px){
+
+  .sec4 article {width:80%; margin:0 auto; height:550px; position:relative;}
+  .sec4 article:nth-child(2) {margin-bottom:100px;}
+  .sec4 article:nth-child(3) {margin-bottom:180px;}
+  .sec4 article:nth-child(4) {height:520px;}
+  .sec4 article:nth-child(5) {margin-bottom:140px;}
+  .sec4 article .textwrap {width:100%;
+                           position:relative; left:0; top:0px;
+                           transform:translate(0,0);
+                           padding:0px;}
+  .sec4 article figure {width:100%; position:relative; left:0; top:0px;
+                        transform:translate(0,0); margin-bottom:30px;}
+  .sec4 article h3 {font-weight:400; font-size:.9em; margin-top:3px; margin-bottom:3px;}
+  .sec4 article h4 {font-weight:300; font-size:.9em;}
+}

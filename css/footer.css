@@ -1,0 +1,19 @@
+footer {width:100%; height:20vh; background: #353535; margin-top: 100px; color:white;}
+footer .footerWrap {width:80%; height: inherit;
+                    margin: 0 auto;
+                    position: relative;  font-weight: 300;}
+footer .footerWrap ul {float: right;
+                       position: absolute; right:2%; top:50%;
+                       transform:translate(0,-50%);}
+footer .footerWrap ul li {float: left; font-size:1em; margin-left:40px;}
+footer .footerWrap .copyright {position: absolute; left:2%; top:50%;
+                               transform:translate(0,-50%);}
+footer .footerWrap .test {position: absolute; left:50%; top:50%;
+                          transform: translate(-50%,-50%);}
+@media(max-width:512px){
+  footer {margin-top: 50px;}
+  footer .footerWrap { width:90%; font-size: .8em;}
+  footer .footerWrap ul {display: none;}
+  footer .footerWrap .test {width:80%; text-align: center;}
+  footer .footerWrap .copyright {top:80%; left:50%; transform: translate(-50%,-50%);}
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,400,700" rel="stylesheet">
+    <link href="./css/nav.css" rel="stylesheet">
+    <link href="./css/header.css" rel="stylesheet">
+    <link href="./css/footer.css" rel="stylesheet">
+    <link href="./css/sec1.css" rel="stylesheet">
+    <link href="./css/sec2.css" rel="stylesheet">
+    <link href="./css/sec3.css" rel="stylesheet">
+    <link href="./css/sec4.css" rel="stylesheet">
+    <link href="./css/sec5.css" rel="stylesheet">
+    <style type="text/css">
+      * {margin:0; padding:0; box-sizing:border-box; font-family: 'Noto Sans KR', sans-serif;}
+      ul,ol,li {list-style:none;}
+
+      .slider {width:400%;}
+      .slider li {width:25%; float: left; cursor: pointer;}
+      .slider img {width:100%;}
+    </style>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript">
+      <!--
+        $(document).ready(function(){
+          $("nav").load("./data/nav.html");
+          $("header").load("./data/header.html");
+          $("footer").load("./data/footer.html");
+          $(".sec1").load("./data/sec1.html");
+          $(".sec2").load("./data/sec2.html");
+
+
+          $(".sec2").on("click",function(e){
+            if(e.target == $(".discover")[0]) $(".imporHere").hide().load("./data/sec3.html").fadeIn("500");
+            if(e.target == $(".define")[0]) $(".imporHere").hide().load("./data/sec4.html").fadeIn("500");
+            if(e.target == $(".develop")[0]) $(".imporHere").hide().load("./data/sec5.html").fadeIn("500");
+            if(e.target == $(".deliver")[0]) $(".imporHere").hide().load("./data/sec3.html").fadeIn("500");
+          })
+        })
+      //-->
+    </script>
+  </head>
+  <body>
+    <nav>
+    </nav>
+    <header>
+    </header>
+    <section class="sec1">
+    </section>
+    <section class="sec2">
+    </section>
+    <div class="imporHere">
+    </div>
+    <footer>
+    </footer>
+  </body>
+</html>

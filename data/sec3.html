@@ -1,0 +1,130 @@
+<script type="text/javascript">
+  var arr = [0,0,0,0,0];
+  function a(num){
+    $(".slider").eq(num).on("click",function(){
+      arr[num] += 1;
+      var l = $(this).children().length;
+      if(arr[num]==l) arr[num] = 0;
+      $(this).css({"width":l*100+"%"});
+      $(this).children().css({"width":100/l+"%"});
+      $(this).stop().animate({"margin-left":-arr[num]*100+"%"});
+    });
+  };
+
+  for(var i=0;i<arr.length;i++){
+    a(i);
+  }
+</script>
+<section class="sec3">
+  <article>
+    <figure>
+      <ul class="slider">
+        <li><img src="./img/discover1.png"></li>
+        <li><img src="./img/discover2.png"></li>
+        <li><img src="./img/discover3.png"></li>
+      </ul>
+    </figure>
+    <div class="textwrap">
+      <h5>01</h5>
+      <h2>"Discover"?</h2>
+      <h3>문제점을 찾는 첫단계</h3>
+      <h4>
+        더블 다이아몬드의 첫단계는 문제, 기회 혹은 디자인을 통해 개선되어야 할 사항들에 대해 정의하고
+        해결되어야 할 부분들에 대해 명확히 규정합니다. 또한 다양한 곳에서 얻는 영감과 인사이트를 통해
+        다양한 배경지식을 쌓는단계 입니다. 문제점을 찾기위한 아이디어들을 확산하는 단계이며 이 단계의
+        최종 산출물은 해결할 수 있을 만한 씨드 아이디어를 찾는 것입니다.<br/><br/>
+        저희는 기술의 발전으로 근미래에 개발될 벽만한 크기의 디스플레이 출시를 대비해  그것을 사용하여
+        밀레니얼 세대가 겪는 문제점을 해소하는 것을 목적으로 두고 프로젝트를 시작하였습니다.
+      </h4>
+    </div>
+  </article>
+  <article>
+    <figure>
+      <ul class="slider">
+        <li><img src="./img/discover4.png"></li>
+        <li><img src="./img/discover5.png"></li>
+        <li><img src="./img/discover6.png"></li>
+        <li><img src="./img/discover7.png"></li>
+      </ul>
+    </figure>
+    <div class="textwrap">
+      <h5>02</h5>
+      <h2>S.W.O.T. of Our Item</h2>
+      <h3>벽디스플레이 분석</h3>
+      <h4>
+        먼저 타겟이 겪는 문제점을 파악하기 이전에, 우리의 아이템인 벽디스플레이에 대해 잘 알아야할 필요가
+        있었습니다. S.W.O.T. 분석이란 강점(Strength), 약점(Weakness), 기회(Opportunity), 위협(Threat)의
+        머리글자를 모아 만든 단어로 경영 전략을 수립하기 위한 분석 도구로써, 우리의 팀원들이 아이템에 대한
+        이해도를 높이기 위해 차용을 하였습니다.<br/><br/>
+        강점과 기회요소로는 넓은 화면과 IoT 가전기기의 결합이 원할하게 이루어진다는 것, 약점과 위협요소로는
+        크기가 큰 것이 공간을 많이 차지하고 기기들의 포터블화가 이루어지는 현대 사회에서 사용자들이 굳이?라는
+        생각을 가지게 되는 것이 있었습니다.<br/><br/>
+        팀의 결론은 넓은 화면을 적극 활용하고, 핸드폰 어플을 이용한 인터렉션을 주자는 것이었습니다.
+      </h4>
+    </div>
+  </article>
+  <article>
+    <figure>
+      <ul class="slider">
+        <li><img src="./img/discover8.png"></li>
+        <li><img src="./img/discover9.png"></li>
+        <li><img src="./img/discover10.png"></li>
+      </ul>
+    </figure>
+    <div class="textwrap">
+      <h5>03</h5>
+      <h2>Desk Research of the Target</h2>
+      <h3>밀레니얼 세대 조사</h3>
+      <h4>
+        우리는 밀레니얼 세대의 조사를 할 때, 기본적으로 밀레니얼이 지니고 있는 특성과 라이프스타일에 대해
+        조사를 진행을 했고 얻어낸 키워드는 "가심비", "있어빌리티", "워라밸", "인테리어", "독립적" 이렇게
+        5가지로 나왔습니다. 그리고 추가적으로 이웃 소통의 부재에 대해 조사를 진행 했습니다.
+      </h4>
+    </div>
+  </article>
+  <article>
+    <figure>
+      <ul class="slider">
+        <li><img src="./img/discover11.png"></li>
+        <li><img src="./img/content2.jpg"></li>
+        <li><img src="./img/content2.jpg"></li>
+        <li><img src="./img/content2.jpg"></li>
+      </ul>
+    </figure>
+    <div class="textwrap">
+      <h5>04</h5>
+      <h2>Field Research - Interview&Survey</h2>
+      <h3>타겟의 인터뷰와 설문 조사</h3>
+      <h4>
+        인터뷰를 하기 전에, 데스크 리서치를 진행하며 도출된 위의 5가지 키워드를 토대로 기둥 질문 5개를
+        선정하고, 그에 따른 가지 질문을 선정을 했습니다. 그리고 이렇게 만들어진 질문지에 따라 인터뷰어가
+        잘 따라와 줄 수 있는지, 파일럿 인터뷰를 진행을 했습니다.<br/><br/>
+        동시에 인터뷰로는 한정적인 인원들의 의견만 들을 수 있어, 온라인 설문으로 더욱 많은 사람들의 생각을
+        알 수 있게, 온라인 설문을 진행을 했습니다. 인터뷰의 질문과 마찬가지로 5가지의 키워드로 진행을 했지만,
+        설문자들의 편의를 위해 최대한 텍스트를 쓰지 않는 선으로 한정을 두었습니다.
+      </h4>
+    </div>
+  </article>
+  <article>
+    <figure>
+      <ul class="slider">
+        <li><img src="./img/content2.jpg"></li>
+        <li><img src="./img/content2.jpg"></li>
+        <li><img src="./img/content2.jpg"></li>
+        <li><img src="./img/content2.jpg"></li>
+      </ul>
+    </figure>
+    <div class="textwrap">
+      <h5>05</h5>
+      <h2>Discover the Seed ideas/Insights</h2>
+      <h3>씨드 아이디어/인사이트 도출</h3>
+      <h4>
+        "이웃 소통을 원할히 이루어지게 할 수 없을까"<br/>
+        "페이스 북을 왜 기피를 할까"<br/>
+        "어떻게 부담없이 가구를 소비할 수 있을까"<br/>
+        "소소하지만 확실한 행복을 제공할 수 있을까"<br/>
+        "여가 시간을 어떻게 만족스럽게 보낼 수 있을까"
+      </h4>
+    </div>
+  </article>
+</section>
